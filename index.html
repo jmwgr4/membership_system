@@ -10,17 +10,17 @@
 <body>
     <div class="container">
         <div class="form-container login-container">
-            <h2>Welcome back to Organization!</h2>
+            <h2>Welcome to Rocas Solidas De Matematicas!</h2>
             <form id="loginForm">
                 <div class="input-group">
-                    <img src="icon/user.png" alt="Username Icon">
+                    <img src="icon/user1.png" alt="Username Icon">
                     <input type="text" placeholder="Username" id="loginUsername" required>
                 </div>
                 <div class="input-group">
-                    <img src="icon/padlock.png" alt="Password Icon">
+                    <img src="icon/password.png" alt="Password Icon">
                     <input type="password" placeholder="Password" id="loginPassword" required>
                 </div>
-                <a href="#" class="forgot-passowrd">Forgot Password?</a>
+                <a href="forgot_password/forgot-password.html" class="forgot-password">Forgot Password?</a>
                 <button type="submit">Login</button>
                 <p id="error-message"></p>
                 <p>Don't have an account? <a href="#" id="showSignup">Sign Up</a></p>
@@ -28,43 +28,49 @@
         </div>
 
         <div class="form-container signup-container">
-            <a href="#" id="showLogin" class="black-link"> <- Back to Login</a>
-            <h2>Sign Up</h2>
+            <a href="#" id="showLogin" class="black-link"> ← Back to Login</a>
             <form id="signupForm">
-                <div class="input-group">
-                    <img src="icon/user.png" alt="Firstname Icon">
-                    <input type="text" placeholder="First Name" id="firstName" required>
+                <div class="flex-input">
+                    <div class="input-group2">
+                        <img src="icon/name.png" alt="Firstname Icon">
+                        <input type="text" placeholder="First Name" id="firstName" required>
+                    </div>
+                    <div class="input-group2">
+                        <img src="icon/name.png" alt="Middlename Icon">
+                        <input type="text" placeholder="Middle Name" id="middleName">
+                    </div>
+                    <div class="input-group2">
+                        <img src="icon/name.png" alt="Lastname Icon">
+                        <input type="text" placeholder="Last Name" id="lastName" required>
+                    </div>
                 </div>
-                <div class="input-group">
-                    <img src="icon/user.png" alt="Middlename Icon">
-                    <input type="text" placeholder="Middle Name(Optional)" id="middleName">
+
+                <div class="flex-input">  
+                    <div class="input-group2">
+                        <img src="icon/school-email.png" alt="Email Icon">
+                        <input type="email" placeholder="School Email" id="signupEmail">
+                    </div>
+
+                    <div class="input-group2">
+                        <img src="icon/school id.png" alt="School-id Icon">
+                        <input type="text" placeholder="School ID (***-*****)" id="schoolId" required>
+                    </div>
                 </div>
-                <div class="input-group">
-                    <img src="icon/user.png" alt="Lastname Icon">
-                    <input type="text" placeholder="Last Name" id="lastName" required>
+
+                <div class="input-group2">
+                    <img src="icon/phone number.png" alt="Number Icon">
+                    <input type="tel" placeholder="Phone Number" id="phone" required>
                 </div>
-                <div class="input-group">
-                    <img src="icon/id-card.png" alt="School-id Icon">
-                    <input type="text" placeholder="School ID (***-*****)" id="schoolId" required>
-                </div>
-                <div class="input-group">
-                    <img src="icon/email.png" alt="Email Icon">
-                    <input type="email" placeholder="Email" id="signupEmail">
-                </div>
-                <div class="input-group">
-                    <img src="icon/padlock.png" alt="Password Icon">
+                <div class="input-group2">
+                    <img src="icon/password.png" alt="Password Icon">
                     <input type="password" placeholder="Password" id="signupPassword" required>
                 </div>
-                <div class="input-group">
-                    <img src="icon/padlock.png" alt="Password Icon">
+                <div class="input-group2">
+                    <img src="icon/password.png" alt="Password Icon">
                     <input type="password" placeholder="Confirm Password" id="confirmPassword" required>
                 </div>
-                <div class="input-group">
-                    <img src="icon/phone-call.png" alt="Number Icon">
-                    <input type="tel" placeholder="Phone" id="phone" required>
-                </div>
+                
                 <select id="role" required>
-                    <option value="">Select Role</option>
                     <option value="member">Member</option>
                     <option value="officer">Officer</option>
                 </select>
